@@ -6,20 +6,18 @@ class Videogiochi {
 
     private $nome;
     private $piattaforma;
-    private $prezzo;
+    private $prezzo = 60;
     private $sconto;
     private $spedizione;
 
     // cotruttore
 
-    public function __construct ($nome, $piattaforma, $prezzo, $sconto, $spedizione){
+    public function __construct ($nome, $piattaforma, $sconto, $spedizione){
 
         $this -> nome =
         $nome;
         $this->piattaforma =
         $piattaforma;
-        $this->prezzo =
-        $prezzo;
         $this->sconto =
         $sconto;
         $this->spedizione =
@@ -28,11 +26,17 @@ class Videogiochi {
     }
 
     // metodi
-    
+
     public function getNome()
     {
 
         return $this->nome;
+    }
+
+    public function getPrezzo()
+    {
+
+        return $this->prezzo;
     }
 }
 
