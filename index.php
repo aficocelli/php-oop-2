@@ -1,6 +1,11 @@
 <?php 
 
-include __DIR__. '/class/prodotto.class.php';
+include_once __DIR__. '/class/prodotto.class.php';
+include_once __DIR__ . '/class/ps4.class.php';
+
+$game1 = new Ps4('Red dead redemption', 'ps4',60,0,0);
+
+
 
 
 ?>
@@ -19,7 +24,7 @@ include __DIR__. '/class/prodotto.class.php';
 </head>
 
 <body>
-    
+    <h1><?php echo $game1 -> getNome() ?></h1>
 </body>
 
 </html>

@@ -28,7 +28,15 @@ class Videogiochi {
     }
 
     // metodi
+    
+    public function getNome()
+    {
+
+        return $this->nome;
+    }
 }
+
+
 
 
 
